@@ -1,5 +1,7 @@
 .row {
     margin-left: 20px;
+    width: 100%;
+    height: fit-content;
 }
 
 .row-poster {
@@ -8,6 +10,7 @@
     overflow-x: scroll;
     padding: 1rem;
     white-space: nowrap;
+    height: inherit;
 }
 
 .row-poster::-webkit-scrollbar {
@@ -15,6 +18,7 @@
 }
 
 .poster {
+    display: inline-block;
     object-fit: contain;
     height: 120px;
     margin-right: 10px;
