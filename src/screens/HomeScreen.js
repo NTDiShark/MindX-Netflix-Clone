@@ -1,10 +1,14 @@
 import React from 'react';
 import Row from '../components/Row';
 import requests from '../requests.js';
+import Nav from '../components/Nav.js';
+import Banner from '../components/Banner';
 
 const HomeScreen = () => {
     return (
-        <div className='App'>
+        <div className='homescreen' style={{backgroundColor: '#111'}}>
+            <Nav/>
+            <Banner/>
             <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={'true'}/>
             <Row title="Trending now" fetchUrl={requests.fetchTrending}/>
             <Row title="Top rated" fetchUrl={requests.fetchTopRated}/>

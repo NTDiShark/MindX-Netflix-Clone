@@ -31,11 +31,15 @@
 
 .posterLarge {
     object-fit: contain;
-    height: 240px;
+    height: 250px;
     margin-right: 10px;
     transition: transform 450ms;
 }
 
 .posterLarge:hover {
     transform: scale(1.1);
+}
+
+h2 {
+    margin: 0
 }
