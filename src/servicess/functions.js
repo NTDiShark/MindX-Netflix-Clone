@@ -7,11 +7,6 @@ export const getMovieTrailerVsGenres = async (movie) => {
     genres: null,
   };
   try {
-    //   const data = await request.GET(
-    //     `${constants.BASE_URL}/${movie?.media_type === 'tv' ? 'tv' : 'movie'}/${movie?.id}?api_key=${
-    //       constants.API_KEY
-    //     }&language=en-US&append_to_response=videos`
-    //   );
     let data = await instance.get(
       `/${movie?.media_type === "tv" ? "tv" : "movie"}/${
         movie?.id

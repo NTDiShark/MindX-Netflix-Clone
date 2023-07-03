@@ -1,17 +1,19 @@
 import React from "react";
 import "./Nav.css";
-import Search from "../Search";
+import Search from "../Search/Search.js";
 
 const Nav = () => {
   return (
     <div className="nav">
       <div className="nav-contents">
         <div className="nav-left">
-          <img
-            className="nav-logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
-            alt=""
-          />
+          <a href="/">
+            <img
+              className="nav-logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
+              alt=""
+            />
+          </a>
           <div className="nav-item">Home</div>
           <div className="nav-item">TV Show</div>
           <div className="nav-item">Movies</div>

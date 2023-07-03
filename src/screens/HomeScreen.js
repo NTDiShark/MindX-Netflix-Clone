@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Row from "../components/Row/Row";
 import requests from "../requests.js";
-import Nav from "../components/Navbar/Nav";
 import Banner from "../components/Banner/Banner";
 import { getMovieTrailerVsGenres } from "../servicess/functions";
 import Modal from "../components/Modal/Modal";
@@ -31,7 +30,7 @@ const HomeScreen = () => {
 
   return (
     <div className="homescreen" style={{ backgroundColor: "#111" }}>
-      <Banner />
+      <Banner getMovie={(movie) => handleClickMovie(movie)} />
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}

@@ -3,19 +3,20 @@ import { useNavigate } from "react-router-dom";
 import { router } from "../../constants/router";
 import { useRecoilState } from "recoil";
 import { valueSearchStore } from "../../store/valueSearchStore";
+import "./Search.css";
 
 const Search = () => {
   const [valueSeach, setValueSeach] = useRecoilState(valueSearchStore);
 
   const navigate = useNavigate();
 
-  // useLayoutEffect(() => {
-  //   if (!valueSeach) {
-  //     navigate(router.HOME);
-  //   } else {
-  //     navigate(router.SEARCH);
-  //   }
-  // }, [valueSeach]);
+  useLayoutEffect(() => {
+    if (!valueSeach) {
+      navigate(router.HOME);
+    } else {
+      navigate(router.SEARCH);
+    }
+  }, [valueSeach]);
 
   return (
     <div>

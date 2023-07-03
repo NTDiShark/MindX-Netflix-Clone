@@ -22,8 +22,6 @@ const SearchScreen = () => {
     });
   }, [valueSeach]);
 
-  useEffect(() => {}, [position]);
-
   return (
     <div className="contain-search">
       <h2 className="title-search">Search: {valueSeach}</h2>
@@ -38,6 +36,7 @@ const SearchScreen = () => {
                   movie.poster_path || movie.backdrop_path
                 }`}
                 alt={movie.name}
+                style={{ height: "240px" }}
               />
               <div className="movie-title">
                 {movie?.title || movie?.name || movie?.original_name}
