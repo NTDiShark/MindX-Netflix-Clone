@@ -1,7 +1,38 @@
+
+
 .App {
   margin: 0;
   color: white;
   background-color: #111;
   height: 100vh;
   overflow-x: hidden;
+}
+
+.popup-detail-movie {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.input-search {
+  outline: none;
+  border: none;
+  height: 24px;
+  border-radius: 2px;
+  padding: 2px 8px;
+}
+
+.contain-search {
+  padding-top: 70px;
+  padding-left: 20px;padding-right: 20px;
+}
+
+.title-search {
+  padding-top: 30px;
+}
+
+.movie-search {
+  display: flex;
+  flex-wrap: wrap;
 }
